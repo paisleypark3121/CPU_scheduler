@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CPU SCHEDULER - RoundRobin</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="common.js"></script>
+    <script src="rr.js"></script>
+  </head>
+  <body>
+    <h1>CPU SCHEDULER - RoundRobin</h1>
+    <h5>Calculate AVG Wait Time & AVG Completion Time</h5>
+
+    <input type="button" value="Add Row" onclick="addRow()" />
+    <hr>
+    
+    <table id="processes">
+      <tr>
+        <td>Name</td>
+        <td>Duration</td>
+        <td>Arrival</td>
+        <td>Action</td>
+      </tr>
+    </table>
+    <hr>
+    Time Slice <input type="text" id="time_slice">
+    <hr>
+    <input type="button" value="calculate" onclick="rr()">
+
+    <p id="result_avgWaitTime"> </p>
+    <p id="result_avgCompletionTime"> </p>
+  </body>
+</html>
