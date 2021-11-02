@@ -124,11 +124,11 @@ function rr()
     if (a[1]==b[1]) return 0;
   });
 
-  // var _avgWaitTime=avgWaitTime(processes,time_slice);
-  // console.log("avgWaitTime: "+_avgWaitTime);
+  var _avgWaitTime=avgWaitTime(processes,time_slice);
+  console.log("avgWaitTime: "+_avgWaitTime);
   var _avgCompletionTime=avgCompletionTime(processes,time_slice);
   console.log("avgCompletionTime: "+_avgCompletionTime);
 
-  // document.getElementById("result_avgWaitTime").innerHTML="Tempo Medio di Attesa: "+_avgWaitTime;
+  document.getElementById("result_avgWaitTime").innerHTML="Tempo Medio di Attesa: "+_avgWaitTime;
   document.getElementById("result_avgCompletionTime").innerHTML="Tempo Medio di Completamento: "+_avgCompletionTime;
 }
